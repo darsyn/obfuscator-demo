@@ -24,7 +24,7 @@ $loader = require __DIR__.'/../app/autoload.php';
 new Obfuscate(['excludePaths' => [__DIR__ . '/../vendor']]);
 Debug::enable();
 
-$kernel = new AppKernel('dev', true);
+$kernel = new App\Kernel('dev', true);
 if (PHP_VERSION_ID < 70000) {
     $kernel->loadClassCache();
 }
